@@ -22,8 +22,8 @@ const checkNumber = (input) => {
   return /[0-9]/g.test(input);
 };
 
-const getData = localStorage.getItem("userData");
-const userData = JSON.parse(localStorage.getItem("userData")) || [
+const getUserData = localStorage.getItem("userData");
+const userData = JSON.parse(getUserData) || [
   { id: 1, email: "admin@gmail.com", password: "Adm123123" },
 ];
 localStorage.setItem("userData", JSON.stringify(userData));
