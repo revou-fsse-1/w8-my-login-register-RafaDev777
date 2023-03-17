@@ -1,0 +1,16 @@
+{
+  "name": "w8-my-login-register-rafadev777",
+  "version": "1.0.0",
+  "description": "This website was made to complete the w8 assignment. To add more challange to the assignment i decide to make the login page and register as one page.",
+  "main": "index.js",
+  "type": "module",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
