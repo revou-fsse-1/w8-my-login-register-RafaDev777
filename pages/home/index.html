@@ -6,9 +6,24 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Login</title>
   </head>
-  <body>
+  <body onload="showData()">
     <section>
-      <p>yipikayey !! Mother Father</p>
+      <p id="email-display"></p>
+      <input type="text" id="input-name" placeholder="Name" />
+      <input type="text" id="input-age" placeholder="Age" />
+      <input type="text" id="input-email" placeholder="Email" />
+      <button class="add-data" onclick="addData()">Add New Data</button>
+
+      <table>
+        <thead>
+          <th>Name</th>
+          <th>Age</th>
+          <th>Email</th>
+          <th>Action</th>
+        </thead>
+        <tbody id="table-body"></tbody>
+      </table>
     </section>
+    <script src="./home.js"></script>
   </body>
 </html>

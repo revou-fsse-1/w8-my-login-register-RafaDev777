@@ -51,6 +51,7 @@ const signIn = () => {
       break;
     case checkCredential === undefined:
       console.log("success");
+      localStorage.setItem("email", email);
       window.location.href = "./pages/home/";
       break;
   }
