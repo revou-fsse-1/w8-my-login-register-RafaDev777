@@ -2,6 +2,8 @@
 
 This website was made to complete the w8 assignment. To add more challange to the assignment i decide to make the login page and register as one page.
 
+Preview : [rav-login-register.netlify.app](rav-login-register.netlify.app)
+
 ## Pseudocode of the website
 
 to make this website i try to made the pseudo code first to create better understanding of how the process going to works
