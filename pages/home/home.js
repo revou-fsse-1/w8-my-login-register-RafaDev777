@@ -3,7 +3,7 @@ const checkEmptyString = (input) => {
 };
 
 const checkStringLength = (input) => {
-  return input.length > 8;
+  return input.length >= 8;
 };
 
 const checkString = (input) => {

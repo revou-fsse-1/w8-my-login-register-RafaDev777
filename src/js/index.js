@@ -1,12 +1,11 @@
 import {
-  validationFactory,
   checkEmptyString,
   checkStringLength,
   checkEmail,
   checkUpperCase,
   checkLowerCase,
   checkNumber,
-} from "../../lib";
+} from "../../lib/validationLib.js";
 // const checkEmptyString = (input) => {
 //   return input.length > 0;
 // };
@@ -107,3 +106,6 @@ const signUp = () => {
       break;
   }
 };
+
+document.querySelector("#btn-login").addEventListener("click", signIn);
+document.querySelector("#btn-reg").addEventListener("click", signUp);
