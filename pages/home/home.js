@@ -46,6 +46,7 @@ let dummyData = [
 
 const showData = () => {
   let tableBody = document.querySelector("#table-body");
+  tableBody.innerHTML = "";
   for (let i = 0; i < dummyData.length; i++) {
     let row = "<tr>";
     row += "<td>" + dummyData[i].name + "</td>";
