@@ -7,6 +7,8 @@ import {
   checkNumber,
 } from "../../lib/validationLib.js";
 
+import FormValidator from "../../lib/FormValidator.js";
+
 import { eventListenerSelect } from "../../lib/simplifyLib.js";
 
 const getUserData = localStorage.getItem("userData");
