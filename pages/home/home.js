@@ -1,30 +1,10 @@
-const checkEmptyString = (input) => {
-  return input.length > 0;
-};
-
-const checkStringLength = (input) => {
-  return input.length >= 8;
-};
-
-const checkString = (input) => {
-  return /[a-z]/gi.test(input);
-};
-
-const checkEmail = (input) => {
-  return /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/g.test(input);
-};
-
-const checkUpperCase = (input) => {
-  return /[A-Z]/g.test(input);
-};
-
-const checkLowerCase = (input) => {
-  return /[a-z]/g.test(input);
-};
-
-const checkNumber = (input) => {
-  return /[0-9]/g.test(input);
-};
+import {
+  checkEmptyString,
+  checkEmail,
+  checkNumber,
+  checkString,
+} from "../../lib/validationLib.js";
+import { eventListenerSelect } from "../../lib/simplifyLib.js";
 
 const getUserData = localStorage.getItem("email");
 const emailDisp = document.getElementById("email-display");
@@ -112,3 +92,7 @@ const editData = (index) => {
 window.onload = () => {
   showData();
 };
+
+eventListenerSelect(".btn-login", "click", editData);
+eventListenerSelect(".btn-login", "click", delData);
+eventListenerSelect("#btn-login", "click", addData);

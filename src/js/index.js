@@ -7,6 +7,8 @@ import {
   checkNumber,
 } from "../../lib/validationLib.js";
 
+import { eventListenerSelect } from "../../lib/simplifyLib.js";
+
 const getUserData = localStorage.getItem("userData");
 const userData = JSON.parse(getUserData) || [
   { id: 1, email: "admin@gmail.com", password: "Adm123123" },
@@ -16,6 +18,7 @@ localStorage.setItem("userData", JSON.stringify(userData));
 const signIn = () => {
   let email = document.querySelector("#emailLogin").value;
   let pw = document.querySelector("#pwLogin").value;
+  console.log(email, "email");
 
   const checkCredential = userData.find(
     (a) => a.email === email && a.password === pw
@@ -84,5 +87,5 @@ const signUp = () => {
   }
 };
 
-document.querySelector("#btn-login").addEventListener("click", signIn);
-document.querySelector("#btn-reg").addEventListener("click", signUp);
+eventListenerSelect("#btn-login", "click", signIn);
+eventListenerSelect("#btn-reg", "click", signUp);
